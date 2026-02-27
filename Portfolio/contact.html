@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  // Only redirect if not already on index.html
+  if (window.location.pathname !== "/index.html" && window.performance) {
+    // Check if page was reloaded
+    if (performance.getEntriesByType("navigation")[0].type === "reload") {
+      window.location.href = "index.html";
+    }
+  }
+</script>
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <h2>Contact Me</h2>
+  <nav>
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="certificates.html">Certificates</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- <section>
+  <form id="contactForm">
+    <input type="text" placeholder="Your Name" required><br><br>
+    <input type="email" placeholder="Your Email" required><br><br>
+    <textarea placeholder="Your Message" required></textarea><br><br>
+    <button type="submit">Send Message</button>
+  </form>
+</section> -->
+<section>
+  <h2>Connect With Me</h2>
+
+  <div class="card">
+    <p>🌐 GitHub:</p>
+    <a href="https://github.com/allrounder123" target="_blank">Visit My GitHub</a>
+
+    <p>💼 LinkedIn:</p>
+    <a href="https://www.linkedin.com/in/shanza-bukhari-aa29502a4/" target="_blank">Visit My LinkedIn</a>
+  </div>
+</section>
+
+<footer>
+  <p>© SHANZA BUKHARI</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

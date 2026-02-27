@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  // Only redirect if not already on index.html
+  if (window.location.pathname !== "/index.html" && window.performance) {
+    // Check if page was reloaded
+    if (performance.getEntriesByType("navigation")[0].type === "reload") {
+      window.location.href = "index.html";
+    }
+  }
+</script>
+  <title>Experience</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <h2>Experience</h2>
+  <nav>
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="certificates.html">Certificates</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section>
+  <div class="grid">
+
+    <!-- Web Development Internship -->
+    <div class="card">
+      <h3>Web Development Intern</h3>
+      <p>Internship at Arch Technologies — Worked on full-stack development projects using various technologies and languages.</p>
+      <a href="images/arch-offer.jpeg" target="_blank" class="experience-btn">
+        <img src="images/arch-offer.jpeg" alt="Arch Technologies Offer Letter" class="experience-img" />
+      </a>
+    </div>
+
+    <!-- Digital Marketing Internship -->
+    <div class="card">
+      <h3>Digital Marketing Intern</h3>
+      <p>Internship at DevelopersHub — Managed social media campaigns, branding, and digital marketing strategies for real projects.</p>
+      <a href="images/developershub.png" target="_blank" class="experience-btn">
+        <img src="images/developershub.png" alt="DevelopersHub Offer Letter" class="experience-img" />
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Queen</p>
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
