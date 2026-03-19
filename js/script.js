@@ -1,3 +1,20 @@
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+}, {
+  threshold: 0.3
+});
+
+document.querySelectorAll(".animate-img").forEach(el => {
+  observer.observe(el);
+});
+
+
 document.getElementById("contactForm").addEventListener("submit", function(e){
     e.preventDefault();
     alert("Message sent successfully!");
