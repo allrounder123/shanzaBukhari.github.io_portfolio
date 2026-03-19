@@ -203,6 +203,19 @@ a:hover {
   border-radius: 5px;
 }
 
+/* portfolio  image animation */
+.animate-img {
+  opacity: 1;
+  transform: translateY(60px) scale(0.9);
+  transition: all 0.8s ease;
+}
+
+/* When visible */
+.animate-img.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
 .cert-img {
   width: 100%;
   cursor: pointer;
